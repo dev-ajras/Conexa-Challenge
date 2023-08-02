@@ -6,7 +6,7 @@ import { messages } from "../constants/messages";
 const verifyToken = (token: string): Promise<IUser | null> => {
   return new Promise((resolve, reject) => {
     try {
-      const decoded = jwt.verify(token, process.env.SECRET_JWT!) as JwtPayload;
+      const decoded = jwt.verify(token, process.env.secretjwt!) as JwtPayload;
       resolve(decoded as IUser);
     } catch (err) {
       reject(err);

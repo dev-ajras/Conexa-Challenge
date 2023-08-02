@@ -38,7 +38,7 @@ describe("userService", () => {
     expect(bcrypt.compare).toHaveBeenCalledWith(password, mockUser.password);
     expect(jwt.sign).toHaveBeenCalledWith(
       { email: mockUser.email, isAdmin: mockUser.isAdmin },
-      process.env.SECRET_JWT!,
+      process.env.secretjwt!,
       {
         expiresIn: "1h",
       }

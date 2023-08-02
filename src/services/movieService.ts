@@ -2,7 +2,7 @@ import { Movie } from "../types/MovieType";
 import movieModel from "../models/Movie";
 const movieService = {
   loadAPIMovies: async () => {
-    const url = process.env.BASE_URL_SW! + "films/";
+    const url = process.env.baseurlsw! + "films/";
     const response = await fetch(url);
     const { results } = await response.json();
     const movies = await movieModel.find();

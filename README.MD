@@ -52,13 +52,13 @@ PASOS PARA INSTALAR EL PROYECTO:
 
 3 - Debemos completar las variables de entorno, modificamos el .env.example a .env:
 
-PORT= El puerto donde queremos que se ejecute el proyecto.
+port= El puerto donde queremos que se ejecute el proyecto.
 
-SECRET_JWT= Es una palabra clave que utilizamos para completar la encriptacion con JWT.
+secretjwt= Es una palabra clave que utilizamos para completar la encriptacion con JWT.
 
-BASE_URL_SW= https://swapi.dev/api/
+baseurlsw= https://swapi.dev/api/
 
-y URL_MONGO= (a continuacion explicare como obtenerla).
+y urlmongo= (a continuacion explicare como obtenerla).
 UTILIZAREMOS MONGO CLOUD YA QUE NOS PERMITE CREAR UN CLUSTER GRATIS.
 
 # como obtener nuestra url de mongo
