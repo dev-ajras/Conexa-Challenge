@@ -36,7 +36,7 @@ const userService = {
 
       const token = jwt.sign(
         { email: user.email, isAdmin: user.isAdmin },
-        process.env.secretjwt!,
+        process.env.SECRET_JWT!,
         {
           expiresIn: "1h",
         }

@@ -7,7 +7,7 @@ import movieRouter from "../controllers/movieController";
 export default function startApi() {
   try {
     const app = express();
-    const port = process.env.port ?? 5001;
+    const port = process.env.PORT ?? 5001;
 
     app.use(cors());
 
