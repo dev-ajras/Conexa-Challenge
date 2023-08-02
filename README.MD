@@ -19,25 +19,25 @@ PUBLICOS:
 
 - <span style="color:blue">POST</span> /users/register : Creacion de usuario regular, require email y password.
 
-- <span style="color:blue">POST</span> /users/register-admin: Creacion de usuario admin, require email y password.
+- <span style="color:blue">POST</span> /users/register-admin : Creacion de usuario admin, require email y password.
 
-- <span style="color:blue">POST</span> /user/login: Login de usuario, retorna token JWT de autenticacion, requiere email y password.
+- <span style="color:blue">POST</span> /user/login : Login de usuario, retorna token JWT de autenticacion, requiere email y password.
 
 - <span style="color:green">GET</span> /movies : Retorna las peliculas que se encuentran almacenadas en la base de datos.
 
 PARA USUARIOS REGULARES:
 
-- <span style="color:green">GET</span> /movies/:id: Retorna toda la info disponble sobre la pelicula del id que fue pasado por parametro.
+- <span style="color:green">GET</span> /movies/:id : Retorna toda la info disponble sobre la pelicula del id que fue pasado por parametro.
 
 PARA USUARIOS ADMIN:
 
-- <span style="color:blue">POST</span> /movies/load-api-movies: Chequea si las peliculas de SWAPI se encuentran almacenadas en la db, de faltar alguna las guarda en la base de datos.
+- <span style="color:blue">POST</span> /movies/load-api-movies : Chequea si las peliculas de SWAPI se encuentran almacenadas en la db, de faltar alguna las guarda en la base de datos.
 
-- <span style="color:blue">POST</span> /movies/add: Agregar una pelicula a la base de datos, requiere pasar por body en formato json por lo menos el title de la pelicula a almacenar, el resto de los campos es opcional.
+- <span style="color:blue">POST</span> /movies/add : Agregar una pelicula a la base de datos, requiere pasar por body en formato json por lo menos el title de la pelicula a almacenar, el resto de los campos es opcional.
 
-- <span style="color:orange">PATCH</span> /movies/:id: Modificar una pelicula existente, se pasa por parametro el id y por el body en formato json las propiedades a modificar.
+- <span style="color:orange">PATCH</span> /movies/:id : Modificar una pelicula existente, se pasa por parametro el id y por el body en formato json las propiedades a modificar.
 
-- <span style="color:red">DELETE</span> /movies/:id: Eliminar una pelicula de la base de datos, se pasa por parametro el id de la pelicula a eliminar.
+- <span style="color:red">DELETE</span> /movies/:id : Eliminar una pelicula de la base de datos, se pasa por parametro el id de la pelicula a eliminar.
 
 # requisitos para iniciar el proyecto de manera local:
 
