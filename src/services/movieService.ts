@@ -41,7 +41,7 @@ const movieService = {
   },
   updateMovie: async (id: string, updatedData: any) => {
     const movie = await movieModel.findById(id);
-    if (!movie) return;
+    if (!movie) return null;
     movie.title = updatedData.title || movie.title;
     movie.episode_id = updatedData.episode_id || movie.episode_id;
     movie.opening_crawl = updatedData.opening_crawl || movie.opening_crawl;
