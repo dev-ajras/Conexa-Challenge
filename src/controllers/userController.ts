@@ -11,7 +11,7 @@ router.post("/register", async (req: Request, res: Response) => {
     return res.status(400).json({ error: messages.PASSWORD_EMAIL_REQUIRED });
 
   const exist = await userService.getUser(email);
-  if (exist) return res.status(409).json({ error: messages.EXISTING_USER });
+  if (exist) return res.status(409).json({ error: messages.EXISTING_EMAIL });
 
   const register = await userService.registerUser(email, password, false);
 
@@ -28,7 +28,7 @@ router.post("/register-admin", async (req: Request, res: Response) => {
     return res.status(400).json({ error: messages.PASSWORD_EMAIL_REQUIRED });
 
   const exist = await userService.getUser(email);
-  if (exist) return res.status(409).json({ error: messages.EXISTING_USER });
+  if (exist) return res.status(409).json({ error: messages.EXISTING_EMAIL });
 
   const register = await userService.registerUser(email, password, true);
 

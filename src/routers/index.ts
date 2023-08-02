@@ -38,7 +38,6 @@ export default function startApi() {
       console.log(`🚀🌈 Conexa server running on http://localhost:${port}`);
     });
   } catch (error) {
-    console.log(error);
     console.log("❌ Failed to start server.");
   }
 }
